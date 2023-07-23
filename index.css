@@ -1,5 +1,6 @@
 :root {
     --light-text: #E4E5EA;
+    --dark-gray: #656566;
 }
 
 /*--Обнувление браузерных стилей--*/
@@ -66,6 +67,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
     text-decoration: none;
+    color: var(--light-text);
 }
 
 a:hover {
@@ -132,7 +134,7 @@ body {
 }
 
 .header__logo img {
-    margin: 11px 0px 11px 0px;
+    margin: 11px 0px 12px 0px;
 }
 
 .header__logo p {
@@ -143,10 +145,6 @@ body {
 .menu {
     font-size: 1.6rem;
     font-weight: 500;
-}
-
-.menu a {
-    color: var(--light-text);
 }
 
 .header__menu {
@@ -168,7 +166,7 @@ body {
     font-family: Inter;
     font-size: 1.6rem;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 115px;
 }
 
@@ -196,7 +194,7 @@ body {
 .main {
     display: flex;
     justify-content: space-between;
-    margin-top: 92px;   
+    margin-top: 91px;   
 }
 
 .main__text-left .text-white {
@@ -226,7 +224,7 @@ body {
 
 .main__text-right {
     max-width: 360px;
-    margin-top: 13px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
@@ -289,6 +287,71 @@ body {
 /*----------------------*/
 /*-------footer---------*/
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 124px;
+}
 
+
+.footer__block .block-uppercase {
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    color: var(--dark-gray);
+}
+
+.footer__block .block-regular{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 150px;
+    
+}
+
+.footer__block:last-child .block-uppercase{
+    text-align: right;
+}
+
+.footer__block:last-child .block-regular{
+    text-align: right;
+    width: 540px;
+}
+
+.footer__item {
+    margin-bottom: 13px;
+    margin-right: 52px;
+}
+
+.footer__contacts p{
+    letter-spacing: 0.1px;
+}
+
+.footer__contacts .icons__item{
+    margin-right: 5px;
+}
+.footer__contacts .icons__item:last-child{
+    margin-right: 0px;
+}
+
+.footer__contacts .contacts__item{
+    margin-bottom: 22px;
+}
 
 /*----------------------*/
+/*-------bottom---------*/
+
+.bottom{
+    margin-top: 25px;
+    text-align: right;
+}
+
+.bottom__item{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
