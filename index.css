@@ -1,0 +1,177 @@
+  /*--Обнувление браузерных стилей--*/
+
+  *,
+  *:before,
+  *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  :focus,
+  :active {
+      outline: none;
+  }
+
+  a:focus,
+  a:active {
+      outline: none;
+  }
+
+  nav,
+  footer,
+  header,
+  aside {
+      display: block;
+  }
+
+  html,
+  body {
+      height: 100%;
+      width: 100%;
+      line-height: 1;
+      -ms-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      margin: 0px auto;
+
+      font-size: 62.5%;
+  }
+
+  input,
+  button,
+  textarea {
+      font-family: inherit;
+  }
+
+  input::-ms-clear {
+      display: none;
+  }
+
+  button {
+      cursor: pointer;
+  }
+
+  button::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+  }
+
+  a,
+  a:visited {
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+
+  ul li {
+      list-style: none;
+  }
+
+  img {
+      vertical-align: top;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-size: inherit;
+      font-weight: inherit;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      color: #fff;
+  }
+
+  p {
+    margin-block-start: 0px;
+     margin-block-end: 0px;
+  }
+
+  /*--------------------*/
+  :root {
+      --light-text: #E4E5EA;
+  }
+
+  body {
+      background-image: url(img/background.png);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-color: #000;
+  }
+
+  .container {
+      max-width: 1440px;
+      margin: 0px auto;
+      padding: 0px 150px;
+  }
+
+  .header {
+      height: 73px;
+      margin-top: 46px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .header__logo {
+      max-width: 140px;
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 1rem;
+      color: var(--light-text)
+  }
+
+  .header__logo img {
+      margin: 11px 0px 11px 0px;
+  }
+
+  .header__logo p {
+      line-height: 1.1;
+  }
+
+  .menu {    
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+  }  
+  .menu a{
+    color: var(--light-text);
+  }
+  .header__menu {
+    margin-top: 16px;
+  }
+  .menu__item {    
+    margin-left: 26px;
+  }
+
+  .header__contacts {
+      display: flex;
+      justify-content: space-between;
+  }
+  .header__contacts p {
+    color: var(--light-text);
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 115px;
+  }
+  .contacts__icons{
+    margin-top: 14px;
+    margin-left: 53px;
+  }
+  .icons__item {    
+    margin-right: 26px;
+  }
+  .icons__item img{
+    height: 20px;
+    width: 20px;
+  }
+  .icons__item:last-child {
+    margin-right: 0px;
+  }
