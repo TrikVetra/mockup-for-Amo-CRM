@@ -365,7 +365,7 @@ body {
 /*----------------------*/
 /*--------media---------*/
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
     body {
         background-image: url(img/bg.png); 
@@ -467,24 +467,44 @@ body {
     }
     .footer__block .block-regular {
         font-size: 1.4rem;
+        max-height: 150px;
+        max-width: 300px;
     }
     .footer__item {        
-        margin-right: 0px;
-        width: 135px;
-    }
-    .footer__item:first-child {        
-        margin-right: 0px;
-        width: fit-content;
+        margin-right: 20px;        
     }
 
+    .footer__block .footer__item{
+        max-width: 120px;
+    }
+    .footer__block:first-child .footer__item{
+        max-width: 200px;
+    }
     .footer__block:last-child .block-uppercase{
         text-align: left;
-    }
-    
+    }    
     .footer__block:last-child .block-regular{
-        text-align: left;
+        text-align: left;       
         width: 100%;
     }
+    .footer__block:last-child .footer__contacts:first-child{
+        font-size: 1.6rem;
+    }
+    .footer__contacts .contacts__icons{
+        margin: 0px
+    }
+    .footer__contacts .contacts__item{
+        margin-bottom: 10px;
+    }
+    .footer__contacts{
+        margin-bottom: 25px;
+    }
+    .bottom{
+        text-align: left;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+
 
 
 }
